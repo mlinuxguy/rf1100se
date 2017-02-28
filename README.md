@@ -3,6 +3,7 @@ Arduino code and Odroid-C1 (or Raspberry PI) python code to control TI cc1100 an
 
 Notes:  
 pyrf1101se.py      - updated transmit() section to fix a bug
+
 pyrf1101se_pypy.py - PYPY version of the program, need to install the pypy env
 
 Many of the cheap cc1101 modules available online only work at 433mhz due to missing inductors and resistors on the board, make sure if you want frequencies other than 433Mhz that you see more than just 4 inductors near the antenna (that's 433mhz, it takes 6-8 for 915mhz).
