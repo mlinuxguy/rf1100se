@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/pypy
 # Markham Thomas   Jan 22, 2017
 # Python support for TI CC1101   433mhz (RF1101SE transceiver)
 #  and   support for RF1100SE with 315/433/868/915 mhz
