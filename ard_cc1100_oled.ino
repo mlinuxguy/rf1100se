@@ -238,7 +238,7 @@ void cc1100_transmit(void) {
   SPI.transfer(STX);    // command strobe to request TX mode
   digitalWrite(cc1100_csn_pin, HIGH);
   marc_reg = MARCSTATE | READ_SINGLE_BYTE;
-  while (marc_state != 0x13) {
+  while (marc_state != 0x01) {    // bugfix, its not 0x13 but 0x01 to wait for
     marc_state = readRegister(marc_reg) & 0x1f;
   }
 }

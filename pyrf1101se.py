@@ -321,7 +321,8 @@ rfspi = setup_spi()
 reset_cc1100(rfspi)
 a = get_chip_info(rfspi)
 print "chip info: ", a
-setup_config_register(rfspi,rf_msk_433_250k)
+#setup_config_register(rfspi,rf_msk_433_250k)
+setup_config_register(rfspi,rf_msk_902_250k)
 #setup_config_register(rfspi,rf_fsk2_433_2_4k)
 device_address_and_channel(rfspi,MYADDRESS,DEVICECHAN)
 #set_syncword(rfspi,SYNCWORD)	# setting this breaks transmission/reception
